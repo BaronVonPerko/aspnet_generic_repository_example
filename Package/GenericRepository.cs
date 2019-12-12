@@ -1,16 +1,15 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Data.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repositories
 {
-    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
+    public class GenericRepository<TEntity, TContext> : IGenericRepository<TEntity> where TEntity : class where TContext : DbContext
     {
-        protected readonly CoreTestContext _db;
+        protected readonly TContext _db;
 
-        protected GenericRepository(CoreTestContext db)
+        protected GenericRepository(TContext db)
         {
             _db = db;
         }

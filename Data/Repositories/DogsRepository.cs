@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Linq;
 using Data.Models;
 
 namespace Data.Repositories
 {
-    public class DogsRepository : GenericRepository<Dog>
+    public class DogsRepository : GenericRepository<Dog, CoreTestContext>
     {
         public DogsRepository(CoreTestContext db) : base(db)
         {

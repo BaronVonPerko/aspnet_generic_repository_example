@@ -4,7 +4,7 @@ using Data.Models;
 
 namespace Data.Repositories
 {
-    public class PeopleRepository : GenericRepository<Person>
+    public class PeopleRepository : GenericRepository<Person, CoreTestContext>
     {
         public PeopleRepository(CoreTestContext db) : base(db)
         {

@@ -1,13 +1,10 @@
-using System;
 using System.Collections.Generic;
-using Data;
-using Data.Models;
 using Data.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers
 {
-    [Route("[controller]")]
+    [Microsoft.AspNetCore.Components.Route("[controller]")]
     public class GenericController<TRepo, TModel> : ControllerBase where TRepo : IGenericRepository<TModel>
     {
         protected TRepo Repository;
