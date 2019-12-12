@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Package\Package.csproj" />
+    <ProjectReference Include="..\PerkoGeneric\PerkoGeneric.csproj" />
   </ItemGroup>
 
 </Project>
