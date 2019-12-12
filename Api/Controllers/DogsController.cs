@@ -1,8 +1,8 @@
-using System.Collections.Generic;
 using Data;
 using Data.Models;
 using Data.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Perko.Generic;
 
 namespace Api.Controllers
 {

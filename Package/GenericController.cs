@@ -1,8 +1,7 @@
 using System.Collections.Generic;
-using Data.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Api.Controllers
+namespace Perko.Generic
 {
     [Microsoft.AspNetCore.Components.Route("[controller]")]
     public class GenericController<TRepo, TModel> : ControllerBase where TRepo : IGenericRepository<TModel>

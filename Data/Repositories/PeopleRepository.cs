@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Linq;
 using Data.Models;
+using Perko.Generic;
 
 namespace Data.Repositories
 {

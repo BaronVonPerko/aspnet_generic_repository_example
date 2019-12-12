@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Data.Repositories
+namespace Perko.Generic
 {
     public interface IGenericRepository<TEntity>
     {
